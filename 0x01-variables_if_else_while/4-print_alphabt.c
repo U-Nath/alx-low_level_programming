@@ -23,6 +23,6 @@ int main(void)
 		else
 			putchar(letter);
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }

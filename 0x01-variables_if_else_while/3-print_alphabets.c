@@ -26,6 +26,6 @@ int main(void)
 		putchar(letter);
 		letter++;
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
