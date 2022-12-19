@@ -37,6 +37,9 @@ int main(void)
 				putchar(' ');
 				putchar(digit_1);
 				putchar(digit_2);
+				
+				if (numberi == 98 && numberj == 99)
+					break;
 				if (numberi <= 98)
 				{
 					putchar(',');
