@@ -14,7 +14,6 @@ int main(void)
 	int numberi;
 	int digit1;
 	int digit2;
-
 	int numberj;
 	int digit_1;
 	int digit_2;
@@ -29,7 +28,6 @@ int main(void)
 		{
 			digit_1 = (numberj / 10 + '0');
 			digit_2 = (numberj % 10 + '0');
-
 			if (numberi < numberj)
 			{
 				putchar(digit1);
@@ -37,7 +35,6 @@ int main(void)
 				putchar(' ');
 				putchar(digit_1);
 				putchar(digit_2);
-				
 				if (numberi == 98 && numberj == 99)
 					break;
 				if (numberi <= 98)
