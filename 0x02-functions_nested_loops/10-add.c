@@ -1,5 +1,7 @@
 /**
  * add - adds any two numbers
+ * @a: the first number
+ * @b: the second number
  *
  * Return: the sum
  */
