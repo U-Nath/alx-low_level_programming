@@ -4,7 +4,7 @@
  * _abs - finds the absolute value of a number
  * @r: the number to be manipulated
  *
- * return: Always 0
+ * Return: the absolute value of the number
  */
 
 int _abs(int r)
