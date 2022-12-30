@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lower case
+ * print_alphabet_x10 - prints the alphabet in lower case
  *
- * Return: none
+ * Return: void
  */
 
 void print_alphabet_x10(void)
@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	int counter;
 
 	counter = 1;
-	while (counter <=10)
+	while (counter <= 10)
 	{
 		c = 'a';
 		while (c <= 'z')
