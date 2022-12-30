@@ -2,13 +2,8 @@
 
 /**
  * main - Entry point
- *
- * Description 'prints _putchar without directly referring
- * to the standard library'
- *
- * Return: 0 if success
+ * Return: always 0
  */
-int _putchar(char n);
 
 int main(void)
 {
@@ -21,6 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	
 	return (0);
 }
