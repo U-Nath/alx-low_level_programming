@@ -37,7 +37,7 @@ void fibonacci3(void)
 	{
 		half_ = half_a_x + half_a_y;
 		half = halfa_x + halfa_y;
-		if ((half_ + half) > 9999999999)
+		if ((halfa_x + halfa_y) > 9999999999)
 		{
 			half_ += 1;
 			half %= 10000000000;
