@@ -14,7 +14,8 @@ void fibonacci2(void)
 
 	a_x = 1;
 	a_y = 2;
-	while (a_y <= 4000000)
+	n = 0;
+	while (a_x <= 4000000)
 	{
 		if ((a_x % 2) == 0)
 			n += a_x;
