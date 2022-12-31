@@ -8,23 +8,18 @@
 
 void fibonacci(void)
 {
-	int a_1;
-	int a_2;
 	int n;
-	int a_x;
-	int a_y;
+	long a_x;
+	long a_y;
 
-	a_1 = 1;
-	a_2 = 2;
+	a_x = 1;
+	a_y = 2;
 	n = 1;
-
-	a_x = a_1;
-	a_y = a_2;
 	while (n <= 25)
 	{
-		printf("%d, %d", a_x, a_y);
+		printf("%ld, %ld", a_x, a_y);
 		a_x = a_x + a_y;
-		a_y = a_y + a_x;
+		a_y = a_x + a_y;
 		if (n < 25)
 			printf(", ");
 		n++;
