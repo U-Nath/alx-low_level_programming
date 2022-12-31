@@ -18,7 +18,7 @@ void sum_multiples(void)
 	while (n < 1024)
 	{
 		if ((n % 3) == 0)
-			t = (t + (n / 3));
+			t = (t + n);
 		n++;
 	}
 	
@@ -26,13 +26,14 @@ void sum_multiples(void)
 	while (n < 1024)
 	{
 		if ((n % 5) == 0)
-			f = (f + (n / 5));
+			f = (f + n);
 		n++;
 	}
+	sum = t + f;
 	while (n < 1024)
 	{
 		if ((n % 15) == 0)
-			sum = ((t + f) - n);
+			sum = sum - n;
 		n++;
 	}
 	printf("%d\n", sum);
