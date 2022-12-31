@@ -32,7 +32,8 @@ void fibonacci3(void)
 	halfa_x = a_x % 10000000000;
 	halfa_y = a_y % 10000000000;
 
-	while (n >= 93 && n <= 98)
+	n = 93;
+	while (n <= 98)
 	{
 		half_ = half_a_x + half_a_y;
 		half = halfa_x + halfa_y;
