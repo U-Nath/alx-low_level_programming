@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * times_table - gives the times table of n, given n <= 15
+ * print_times_table - gives the times table of n, given n <= 15
  * @n: the given number
  *
  * Return: void
