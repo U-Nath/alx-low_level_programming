@@ -15,25 +15,38 @@ void sum_multiples(void)
 
 	n = 0;
 	t = 0;
+	printf("Our initial t equals to %d\n", t);
 	while (n < 1024)
 	{
 		if ((n % 3) == 0)
+		{
+			printf("After adding %d, t becomes %d\n", n, (t + n));
 			t = (t + n);
+		}
 		n++;
 	}
-	
 	f = 0;
+	n = 0;
+	printf("Our initial f equals to %d\n", f);
 	while (n < 1024)
 	{
 		if ((n % 5) == 0)
+		{
+			printf("After adding %d, f  becomes %d\n", n, (f + n));
 			f = (f + n);
+		}
 		n++;
 	}
 	sum = t + f;
+	n = 0;
+	printf("So far, our sum equals to %d\n", sum);
 	while (n < 1024)
 	{
 		if ((n % 15) == 0)
+		{
+			printf("After subtracting %d, the sum becomes %d\n", n, sum);
 			sum = sum - n;
+		}
 		n++;
 	}
 	printf("%d\n", sum);
