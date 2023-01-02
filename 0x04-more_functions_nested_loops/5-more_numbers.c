@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int num;
 	int counter;
-	
+
 	counter = 1;
 	while (counter <= 10)
 	{
@@ -20,7 +20,8 @@ void more_numbers(void)
 			printf("%d", num);
 			num++;
 		}
-	printf("\n")
+	printf("\n");
+	counter++
 	}
 }
 
