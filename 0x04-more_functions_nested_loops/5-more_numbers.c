@@ -23,6 +23,6 @@ void more_numbers(void)
 			num++;
 		}
 	_putchar('\n');
-	counter++
+	counter++;
 	}
 }
