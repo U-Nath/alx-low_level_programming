@@ -6,24 +6,23 @@
  * Return: void
  */
 
-void fibonacci3(void)
+int main(void)
 {
 	int n;
 	unsigned long a_x;
-	unsigned long a_y;
+	unsigned long a_y, sum;
 	unsigned long half_a_x, half_a_y, halfa_x, halfa_y;
 	unsigned long half_, half;
 
-	a_x = 1;
-	a_y = 2;
-	n = 1;
-	while (n <= 92)
+	a_x = 0;
+	a_y = 1;
+	n = 0;
+	while (n < 92)
 	{
-		printf("%lu", a_x);
-		a_y = a_x + a_y;
-		a_x = a_y - a_x;
-		if (n < 98)
-			printf(", ");
+		sum = a_x + a_y;
+		printf("%lu, ", sum);
+		a_x = a_y;
+		a_y = sum;
 		n++;
 	}
 
@@ -33,7 +32,7 @@ void fibonacci3(void)
 	halfa_y = a_y % 10000000000;
 
 	n = 93;
-	while (n <= 98)
+	while (n < 99)
 	{
 		half_ = half_a_x + half_a_y;
 		half = halfa_x + halfa_y;
@@ -52,15 +51,5 @@ void fibonacci3(void)
 		n++;
 	}
 	printf("\n");
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-	fibonacci3();
 	return (0);
 }
