@@ -14,7 +14,7 @@ int main(void)
 
 	a_x = 0;
 	a_y = 1;
-	while (n = 0; n < 92; n++)
+	while (n == 0; n < 92; n++)
 	{
 		sum = a_x + a_y;
 		printf("%lu, ", sum);
@@ -25,7 +25,7 @@ int main(void)
 	half_a_y = a_y / 10000000000;
 	halfa_x = a_x % 10000000000;
 	halfa_y = a_y % 10000000000;
-	while (n = 93; n < 99; n++)
+	while (n == 93; n < 99; n++)
 	{
 		half_ = half_a_x + half_a_y;
 		half = halfa_x + halfa_y;
