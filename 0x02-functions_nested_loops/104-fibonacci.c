@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * fibonacci3 - prints the first 50 fibonacci numbers
+ * main - prints the first 50 fibonacci numbers
  *
  * Return: void
  */
@@ -9,30 +9,23 @@
 int main(void)
 {
 	int n;
-	unsigned long a_x;
-	unsigned long a_y, sum;
 	unsigned long half_a_x, half_a_y, halfa_x, halfa_y;
-	unsigned long half_, half;
+	unsigned long half_, half, a_x, a_y, sum;
 
 	a_x = 0;
 	a_y = 1;
-	n = 0;
-	while (n < 92)
+	while (n = 0, n < 92, n++)
 	{
 		sum = a_x + a_y;
 		printf("%lu, ", sum);
 		a_x = a_y;
 		a_y = sum;
-		n++;
 	}
-
 	half_a_x = a_x / 10000000000;
 	half_a_y = a_y / 10000000000;
 	halfa_x = a_x % 10000000000;
 	halfa_y = a_y % 10000000000;
-
-	n = 93;
-	while (n < 99)
+	while (n = 93, n < 99, n++)
 	{
 		half_ = half_a_x + half_a_y;
 		half = halfa_x + halfa_y;
@@ -48,7 +41,6 @@ int main(void)
 		halfa_x = halfa_y;
 		half_a_y = half_;
 		halfa_y = half;
-		n++;
 	}
 	printf("\n");
 	return (0);
