@@ -35,7 +35,7 @@ void fizz_buzz(int limit)
  * Return: Always 0
  */
 
-int main(void);
+int main(void)
 {
 	fizz_buzz(100);
 	return (0);
