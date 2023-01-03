@@ -9,18 +9,22 @@
 
 void print_diagonal(int n)
 {
+	int n_f;
 	int spaces;
 
-	while (n > 0)
+	n_f = n;
+	while (n_f > 0)
 	{
-		spaces = 10 - n;
-		while (spaces > 0)
+		spaces = n;
+		while (spaces > n_f)
 		{
 			_putchar(' ');
 			spaces--;
 		}
 		_putchar('\\');
-		n--;
+		if (n_f > 1)
+			_putchar('\n');
+		n_f--;
 	}
 	_putchar('\n');
 }
