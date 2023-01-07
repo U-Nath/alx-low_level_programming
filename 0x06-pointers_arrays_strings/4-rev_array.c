@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rev_array - to give an array in reverse order
+ * reverse_array - to give an array in reverse order
  * @a: the given array
  * @n: the number of elements in the array
  * Return: void
