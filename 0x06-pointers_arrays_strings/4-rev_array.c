@@ -7,16 +7,16 @@
  * Return: void
  */
 
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
-	int count;
-	int arr[];
+	int count, y;
 
-	count = n;
-	while (count >= 0)
+	count = 0;
+	while (count < n / 2)
 	{
-		arr[n - count] = a[count];
-		count--;
+		y = a[count];
+		a[count] = a[n - count - 1];
+		a[n - count - 1] = y;
+		count++;
 	}
-	a = arr;
 }
