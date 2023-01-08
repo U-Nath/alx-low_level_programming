@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - rewrites in number form
+ * rot13 - rewrites in number form
  * @str: the given string
  *
  * Return: the enrypted string
