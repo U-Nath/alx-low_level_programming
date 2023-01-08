@@ -14,8 +14,13 @@ char *cap_string(char *str)
 	count = 0;
 	while (*(str + count) != '\0')
 	{
-		if (*(str + count) >= 97 && *(str + count) <= 122 && *(str + count - 1) == ' ')
-			*(str + count) -= 32;
+		if (*(str + count) >= 97 && *(str + count) <= 122)
+		{
+			if (*(str + count - 1) == ' ' || *(str + count - 1) == '\n')
+				*(str + count) -= 32;
+			if (*(str + count - 1) == '\t' || *(str + count - 1) == '.')
+				*(str + count) -= 32;
+		}
 		count++;
 	}
 	return (str);
