@@ -15,14 +15,16 @@ char *leet(char *str)
 	char *number = "43071";
 
 	a = 0;
-	while (*(str + a) != '/0')
+	while (*(str + a) != '\0')
 	{
 		b = 0;
 		while (*(upper + b) != '\0' || *(lower + b) != '\0')
 		{
 			if (str[a] == upper[b] || str[a] == lower[b])
 				str[a] = number[b];
+			b++;
 		}
+		a++;
 	}
 	return (str);
 }
