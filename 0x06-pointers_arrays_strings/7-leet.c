@@ -10,7 +10,7 @@
 char *leet(char *str)
 {
 	int a, b;
-	char *upper = {AEOTL};
+	char *upper = "AEOTL";
 	char *lower = "aeotl";
 	char *number = "43071";
 
