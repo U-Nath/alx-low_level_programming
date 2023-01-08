@@ -7,7 +7,7 @@
  * Return: the enrypted string
  */
 
-char *leet(char *str)
+char *rot13(char *str)
 {
 	int a, b;
 	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -20,7 +20,10 @@ char *leet(char *str)
 		while (*(original + b) != '\0')
 		{
 			if (str[a] == original[b])
+			{
 				str[a] = rot[b];
+				break;
+			}
 			b++;
 		}
 		a++;
