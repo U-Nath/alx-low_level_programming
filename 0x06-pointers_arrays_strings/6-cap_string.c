@@ -28,7 +28,7 @@ char *cap_string(char *str)
 				*(str + count) -= 32;
 			if (*(str + count - 1) == '(' || *(str + count - 1) == ')')
 				*(str + count) -= 32;
-			if (*(str + count - 1) == '"')
+			if (*(str + count - 1) == '"' || count == 0)
 				*(str + count) -= 32;
 		}
 		count++;
