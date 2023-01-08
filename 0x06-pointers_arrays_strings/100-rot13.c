@@ -17,7 +17,7 @@ char *leet(char *str)
 	while (*(str + a) != '\0')
 	{
 		b = 0;
-		while (*(upper + b) != '\0')
+		while (*(original + b) != '\0')
 		{
 			if (str[a] == original[b])
 				str[a] = rot[b];
