@@ -24,5 +24,5 @@ char *_strchr(char *s, char c)
 		}
 		count++;
 	}
-	return (NULL);
+	return ('\0');
 }
