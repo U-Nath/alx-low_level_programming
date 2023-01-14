@@ -31,7 +31,6 @@ unsigned int _strspn(char *s, char *accept)
 			b++;
 		}
 		a++;
-		
 		if (i == 0)
 			break;
 	}
