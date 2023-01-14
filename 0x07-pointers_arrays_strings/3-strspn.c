@@ -11,22 +11,29 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int a, b;
+	int a, b, i;
 	unsigned int count;
 
 	count = 0;
-	while (*(accept + b) != '\0')
+	a = 0;
+	while (*(s + a) != '\0')
 	{
-		a = 0;
-		while (*(s + a) != ' ')
+		b = 0;
+		while (*(accept + b) != '\0')
 		{
+			i = 0;
 			if (*(s + a) == *(accept + b))
 			{
 				count++;
+				i++;
+				break;
 			}
-		a++;
+			b++;
 		}
-	b++;
+		a++;
+		
+		if (i == 0)
+			break;
 	}
 	return (count);
 }
