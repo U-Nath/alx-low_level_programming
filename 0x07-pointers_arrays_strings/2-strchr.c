@@ -22,8 +22,7 @@ char *_strchr(char *s, char c)
 			s = s + count;
 			return (s);
 		}
-		else
-			count++;
+		count++;
 	}
 	return (NULL);
 }
