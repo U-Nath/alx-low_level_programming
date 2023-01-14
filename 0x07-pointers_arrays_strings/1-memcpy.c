@@ -5,6 +5,7 @@
  * @dest: the destination file
  * @src: the source file
  * @n: the number of bytes copied
+ * Return: the adjusted memory
  */
 
 char *_memcpy(char *dest, char *src, int n)
@@ -15,5 +16,5 @@ char *_memcpy(char *dest, char *src, int n)
 	{
 		dest[count] = src[count];
 	}
-	return(dest);
+	return (dest);
 }
