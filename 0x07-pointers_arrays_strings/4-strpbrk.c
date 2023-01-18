@@ -26,7 +26,7 @@ char *_strbrk(char *s, char *accept)
 				i++;
 				break;
 			}
-			count++
+			count++;
 			b++;
 		}
 		a++;
