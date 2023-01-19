@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - searches for a similat character between s and accept and 
+ * _strpbrk - searches for a similat character between s and accept and
  * prints starting from the similar character
  * @s: the first string
  * @accept: the reference string
@@ -23,4 +23,4 @@ char *_strpbrk(char *s, char *accept)
 		s++;
 	}
 	return ("\0");
-}		
+}
