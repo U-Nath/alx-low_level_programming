@@ -33,6 +33,11 @@ char *_strpbrk(char *s, char *accept)
 			break;
 		count++;
 	}
-	s = (s + count);
-	return (s);
+	if (i == 0)
+		return ("\0");
+	else
+	{
+		s = (s + count);
+		return (s);
+	}
 }
