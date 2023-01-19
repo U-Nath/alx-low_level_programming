@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _strpbrk - searches for a similat character between s and accept and
@@ -10,17 +10,20 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int a;
+	int a, b;
 
-	while (*s)
+	a = 0;
+	while (*(s + a))
 	{
-		a = 0;
-		for (a = 0; accept[a]; a++)
-		{
-			if (*s == accept[a])
+		b = 0;
+		for (b = 0; *(accept + b); b++)
+		
+			if (*(s + a) == *(accept + b))
+			{
+				s += a;
 				return (s);
 		}
-		s++;
+		a++;
 	}
 	return ("\0");
 }

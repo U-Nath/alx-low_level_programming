@@ -9,7 +9,7 @@
 int main(void)
 {
 char *s = "hello, world";
-char *f = "c";
+char *f = "straigtness is not a fault";
 char *t;
 
 t = _strpbrk(s, f);
