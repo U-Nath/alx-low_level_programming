@@ -8,7 +8,7 @@
  * If the number is less than 0, a return of -1 indicates error
  */
 
-int factorial (int n)
+int factorial(int n)
 {
 	if (n == 0)
 		return (1);
