@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - multiplys two numbers
  *
  * @argc: the number of args
  * @argv: the array of args
- * Return: always 0
+ * Return: 0 if success, 1 if failure
  */
 
 int main(int argc, char *argv[])
