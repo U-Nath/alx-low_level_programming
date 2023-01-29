@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int position, total, aux, change;
-	int coins[] = {25, 10, 5, 2 ,1};
+	int coins[] = {25, 10, 5, 2, 1};
 
 	position = total = aux = change = 0;
 	if (argc != 2)
@@ -41,4 +41,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", change);
 	return (0);
-}	
+}
