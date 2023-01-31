@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	if (array == NULL)
 		return (NULL);
 	j = 0;
-
+	k = 0;
 	while (k < (i + j))
 	{
 		if (k <= i)
@@ -40,6 +40,7 @@ char *str_concat(char *s1, char *s2)
 			array[k] = s2[j];
 			j++;
 		}
+		k++;
 	}
 	array[k] = '\0';
 	return (array);
