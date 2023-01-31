@@ -26,16 +26,20 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j])
 		j++;
 	
-	array = malloc(sizeof(char) * i + 1);
+	array = malloc(sizeof(char) * (i + j) + 1);
 	if (array == NULL)
 		return (NULL);
-	for (k = 0; k < i; k++)
-		array[k] = s1[k];
-	while (k < j + i)
+	j = 0;
+
+	while (k < (i + j))
 	{
-		array[k] = s2[k];
-		k++;
-	}
+		if (k <= i)
+			array[k] = s1[k];
+		if (k >= i)
+		{
+			array[k] = s2[j];
+			j++;
+		}
 
 	array[k] = '\0';
 	return (array);
