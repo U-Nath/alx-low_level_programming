@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 			array[k] = s2[j];
 			j++;
 		}
-
+	}
 	array[k] = '\0';
 	return (array);
 }
