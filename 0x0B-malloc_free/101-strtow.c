@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int word_len(char *str);
+int count_words(char *str);
+char **strtow(char *str);
+
 /**
  * word_len - obtains the length of the array
  * @str: the given string
@@ -56,7 +60,7 @@ char **strtow(char *str)
 	char **strings;
 	int index = 0, words, w, letters, l;
 
-	if (str == NULL || str[0] == 0)
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	words = count_words(str);
 
@@ -85,7 +89,7 @@ char **strtow(char *str)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
-	strings[w] = '\0';
+	strings[w] = NULL;
 
 	return (strings);
 }
