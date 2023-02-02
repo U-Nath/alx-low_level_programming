@@ -4,8 +4,8 @@
 /**
  * str_concat - duplicates the string
  *
- * @str1: the string to be duplicated
- * @str2: the string to be duplicated
+ * @s1: the string to be duplicated
+ * @s2: the string to be duplicated
  * Return: the copy of the string
  */
 
