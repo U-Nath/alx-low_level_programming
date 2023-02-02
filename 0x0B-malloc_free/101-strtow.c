@@ -52,7 +52,7 @@ int count_words(char *str)
  * **strtow - makes an array of strings containing element words
  *
  * @str: the given string
- * return: the classified string
+ * Return: the classified string
  * NULL, in case of error
  */
 
